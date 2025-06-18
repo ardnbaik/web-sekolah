@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #f4f4f4;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+}
+
+.logo {
+  background: #f4f4f4;
+  color: #000080;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo img {
+  width: 50px;
+  margin-bottom: 5px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.menu a {
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.menu a:hover,
+.menu a.active {
+  background-color: #e0e0e0;
+}
+
+.content {
+  flex: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #00B2FF;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 50px;
+}
+
+.empty-notification {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+}
+
+.empty-notification .icon {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.empty-notification h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.empty-notification p {
+  font-size: 0.95em;
+  font-weight: bold;
+}

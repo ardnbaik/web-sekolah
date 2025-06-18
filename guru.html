@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Guru</title>
+  <link rel="stylesheet" href="../index/css/guruuu.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="display: flex; align-items: center;">
+        <img src="../Aset/logo hangtuah.jpg" alt="">
+        <h3>HANGTUAH 1 JAKARTA</h3>
+      </div>
+      <img src="../Aset/logo smk bisa hebat.png" alt="">
+    </header>
+
+    <div class="main">
+      <div class="left-panel">
+        <div class="profile-card">
+          <p>👤 Pa Damun</p>
+          <small>GURU</small>
+        </div>
+
+        <div class="jadwal-card">
+          <div class="arrow left" onclick="gantiHari(-1)">❮</div>
+          <h4 id="hari">SENIN</h4>
+          <div class="arrow right" onclick="gantiHari(1)">❯</div>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <h3>NILAI PARA SISWA</h3>
+        <div class="kelas-grid">
+          <div class="kelas-box">XI-RPL</div>
+          <div class="kelas-box">XI-AKL 1</div>
+          <div class="kelas-box">XI-DKV 1</div>
+          <div class="kelas-box">XI-DKV 2</div>
+          <div class="kelas-box">XI-MP 1</div>
+          <div class="kelas-box">XI-MP 2</div>
+          <div class="kelas-box">XI-MP 3</div>
+          <div class="kelas-box">XI-BR</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const hariList = ["SENIN", "SELASA", "RABU", "KAMIS", "JUMAT", "SABTU", "MINGGU"];
+    let indexHari = 0;
+
+    function gantiHari(arah) {
+      indexHari += arah;
+      if (indexHari < 0) indexHari = hariList.length - 1;
+      if (indexHari >= hariList.length) indexHari = 0;
+      document.getElementById("hari").textContent = hariList[indexHari];
+    }
+  </script>
+</body>
+</html>

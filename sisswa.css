@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #ffffff;
+    border-right: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .logo {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .logo h2 {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #000080;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .menu a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    background-color: #00AEEF;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header-logo {
+    height: 40px;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+  }
+  
+  .biodata p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: #00B2FF;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+header img:last-child {
+  height: 50px;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  background: white;
+}
+
+.sidebar {
+  width: 200px;
+  background: #f2f2f2;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dashboard {
+  flex: 1;
+  padding: 30px;
+}
+
+.dashboard h2 {
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.card .icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}

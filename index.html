@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMK Hangtuah 1 Jakarta</title>
+  <link rel="stylesheet" href="../index/css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="../foto/logo hangtuah.jpg" alt="" class="logo">
+    <div class="text">
+      <h1>SMK Hangtuah 1 Jakarta</h1>
+      <p>SMK Pusat Keunggulan</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="login-box">
+    <img src="logo hangtuah.jpg" alt="" class="login-logo">
+    <h2>SIGN IN</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <select id="role" required>
+        <option value="" disabled selected>Role</option>
+        <option value="admin">Admin</option>
+        <option value="guru">Guru</option>
+        <option value="siswa">Siswa</option>
+      </select>
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+</main>
+
+<!-- Script login berdasarkan role -->
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const role = document.getElementById("role").value;
+
+    // Redirect sesuai role
+    switch (role) {
+      case "admin":
+        window.location.href = "admin.html";
+        break;
+      case "guru":
+        window.location.href = "guru.html";
+        break;
+      case "siswa":
+        window.location.href = "siswa.html";
+        break;
+      default:
+        alert("Pilih role terlebih dahulu.");
+    }
+  });
+</script>
+
+</body>
+</html>

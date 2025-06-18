@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: #00B2FF;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header h3 {
+  margin-left: 10px;
+}
+
+header img {
+  height: 50px;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  background: white;
+  gap: 30px;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+}
+
+.profile-card {
+  background: #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.profile-card small {
+  display: block;
+  font-weight: normal;
+  color: #555;
+}
+
+.jadwal-card {
+  background: #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.jadwal-card h4 {
+  margin-bottom: 10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.right-panel {
+  flex: 1;
+  padding-top: 10px;
+}
+
+.right-panel h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.kelas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.kelas-box {
+  background: #ddd;
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+}
